@@ -2,7 +2,7 @@ import React from 'react';
 import Chat from './images/chat.png'
 const MyAvatar = () => {
   return (
-    <div id="avatar">
+    <div className="avatar">
 
         <img
       

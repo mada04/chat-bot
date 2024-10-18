@@ -5,6 +5,7 @@ import CustomMessage from './CustomMessage';
 import './App.css'
 import Stock from './Stock';
 import data from './Chatbot - stock data.json'
+import FinalView from './FinalView';
 
 
 
@@ -48,6 +49,11 @@ const config = {
     // Replaces the default user chat message
     //  userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
   },
+  customMessages: {
+    userChatMessage: (state, props) => {
+      // Handle your custom user messages here
+    },
+  },
   state: {
     checker: null,
     data,
@@ -56,6 +62,11 @@ const config = {
       stockExchange:"",
       topStocks: {},
      
+    },
+    stockData:{
+      code:"",
+      price:"",
+      stockName:""
     }
   },
   widgets: [
@@ -63,11 +74,17 @@ const config = {
     {
       widgetName: 'menuSelected',
       widgetFunc: (props) => <CustomMessage {...props} />,
-      mapStateToProps: ['menu'],
+      // mapStateToProps: ['menu'],
     },
     {
       widgetName: 'stock',
       widgetFunc: (props) => <Stock {...props} />,
+      // mapStateToProps: ['menu',"stocks"]
+    },
+    {
+      widgetName: 'viewFinal',
+      widgetFunc: (props) => <FinalView {...props} />,
+      // mapStateToProps: ['menu',"stocks"]
     },
   ],
 };

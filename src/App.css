@@ -42,20 +42,26 @@
   color:white;
 }
 .react-chatbot-kit-chat-bot-message {
-  background-color: #61045F;
+  background-color: #eaf5fe!important;
+  color:black;
+  margin: 0!important;
 }
 .react-chatbot-kit-chat-bot-message-arrow {
   border-right: 8px solid #61045F;;
 }
+.react-chatbot-kit-chat-container{
+  width: 500px!important;
+}
 
 .avatar{
-  background-color: red;
   width: 50px;
   height: 50px;
   display: grid;
-  place-items: certer;
+  margin-right: 10px!important;
+  /* place-items: certer;
   color: white;
-  border-radius: 100%;
+  background-color: red;
+  border-radius: 100%; */
 }
 
 .menu{
