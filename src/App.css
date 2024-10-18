@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+.react-chatbot-kit-chat-header {
+  background-color: blue;
+  color:white;
+}
+.react-chatbot-kit-chat-bot-message {
+  background-color: #61045F;
+}
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right: 8px solid #61045F;;
+}
+
+.avatar{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: certer;
+  color: white;
+  border-radius: 100%;
+}
+
+.menu{
+  /* background-color: #61045F;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius:999px ;
+  border: none;
+  cursor: pointer;
+  margin-left: 3rem; */
+  /* background-color: #2898ec; */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  /* color: #fff; */
+  font-weight: medium;
+  position: relative;
+  width: 184.5px;
+  margin-left: auto;
+  text-align: left;
+}
+.lineText{
+  background-color: #d4e5f7;
+  border-color: #d4e5f7;
+  color: black;
+}
+.textColor{
+  color: black;
+}
