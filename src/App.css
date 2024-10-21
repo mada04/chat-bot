@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #b2c1df;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,9 @@
 .react-chatbot-kit-chat-container{
   width: 500px!important;
 }
-
+.react-chatbot-kit-user-avatar-container {
+  display: none;
+}
 .avatar{
   width: 50px;
   height: 50px;
